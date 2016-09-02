@@ -12,7 +12,8 @@
 <body>
 	<div class="container-fluid">
 		<header><!--Inicio de Header_Menu -->
-			<div class="navbar navbar-default navbar-fixed-top ">
+			<a  name="Home"></a>
+			<div class="navbar navbar-default  ">
 				<div class="container-fluid CAzule ">
 				    <div class="navbar-header">
 					     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -37,19 +38,56 @@
 		<seccion><!--Seccion Opening Time -->
 			<div class="container">
 				<div class="row">
-					<div class=" col-xs-12 col-lg-12">
+					<div class=" col-xs-4 col-lg-4">
+						<div class="row">
+							<span class="text-right glyphicon glyphicon-off"></span>
+							<h4 class="text-left">OPENING TIME</h4>
+							<p >9:00 am a 10:pm</p>
+						</div>
 						
 					</div>
+					<div class=" col-xs-4 col-lg-4">
+						<img class="center-block img-responsive" src="img/logo.png" alt="logo">
+					</div>
+					<div class=" col-xs-4 col-lg-4"><!--Buscardor-->
+						<form method="get"><!--Mostrara informcion al escribir-->
+							<input type="text" class="input1">
+							<span class="glyphicon glyphicon-search"></span>
+						</form>
+					</div>
+
 				</div>
 			</div>
 		</seccion>
-		<section><!--Inicio de Imagen fondo-->
-			<div class="container-fluid">
+		<section><!--Inicio de Imagen carusel-->
+			<div class="container-fluid ">
 				<div class="row">
-					<div class=" col-xs-12 col-lg-12">
-						
+					<div class="col-xs-12 col-lg-12">
+						<div id="carousel-1" class="carousel slide" dara-ride="carousel">
+							<!--Agrego indicadores-->
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-1" data-slide-to="0" class="activate"></li>
+								<li data-target="#carousel-1" data-slide-to="1"></li>
+							</ol>
+							<!--Se agrega el contenido del slide-->
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img class="img-responsive" src="img/slider1.jpg" alt="slider1">
+									<div class="carousel-caption"><!--texto del slide-->
+										<h2 class="CWhite">AUTUMN /WINTER LOOK BOOK</h2>
+									</div>
+								</div>
+								<div class="item">
+									<img class="img-responsive" src="img/slider2.jpg" alt="slider1">
+									<div class="carousel-caption"><!--texto del slide-->
+										
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
+				
 			</div>
 		</section>
 		<seccion><!--Seccion Accesorios College-->
